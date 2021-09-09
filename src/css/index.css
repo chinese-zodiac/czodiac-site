@@ -21,6 +21,7 @@
 	top: 0px;
 	width: 100vw;
 	height: 100vh;
+	z-index: -100;
 }
 
 body{
@@ -353,13 +354,14 @@ nav ul li .btn-play{
 	box-shadow: white 0px 0px 5px 5px;
 }
 
-.token-contracts ul li a{
+ul.contracts li a{
 	font-family: monospace;
 	text-decoration: underline;
 	color:white;
+	cursor:pointer;
 }
 
-.token-contracts ul li a:hover{
+ ul.contracts li a:hover{
 	color:lightgray;
 }
 
