@@ -1,12 +1,8 @@
 module.exports = {
-  flags: {
-    DEV_SSR: true
-  },
   siteMetadata: {
     siteUrl: "https://czodiac.com",
     title: "CZodiac - Defi NFT Games on BSC",
   },
-  pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -23,7 +19,6 @@ module.exports = {
         display: `standalone`,
         icon: `./src/images/czodiac-coin.png`
       }
-    },    
-    'gatsby-plugin-ipfs'
+    }
   ]
 };

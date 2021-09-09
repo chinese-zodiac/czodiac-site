@@ -121,7 +121,7 @@ const IndexPage = () => {
     <main >
 
       <nav>
-        <StaticImage src="../images/logo.png" className="logo" alt="czodiac logo" loading="eager" />
+        <StaticImage src="../images/logo.png" className="logo" alt="czodiac logo" />
         <input type="checkbox" id="check" />
         <label htmlFor="check" className="checkbtn">
           <b className="fas fa-bars"></b>
@@ -150,7 +150,7 @@ const IndexPage = () => {
           <div id="AboutCzodiac" className="jumpMarker" />
           <h2 >About Czodiac</h2>
           <br/>
-          <StaticImage src="../images/image6.jpg" className="image" alt="about czodiac" loading="eager" />
+          <StaticImage src="../images/image6.jpg" className="image" alt="about czodiac" />
           <br/><br/>
           <p>
             Chinese Zodiacs are believed to bring luck to those who truly believe. Many people around the globe believe in it’s power and plan their life according to what these signs tell them. We are on a mission to introduce a project that will ensure your crypto portfolio lucky!
