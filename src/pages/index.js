@@ -119,6 +119,13 @@ const particlesParams = {
 const IndexPage = () => {
   return (
     <main >
+
+      <Particles id="particles-js" width="100%" height="100vh" params={particlesParams} style={{
+        backgroundColor: "transparent",
+        position: "absolute",
+        width: "100%",
+        height: "100%"
+      }}></Particles>
       <Helmet>
           <meta charSet="utf-8" />
           <title>CZodiac - DeFi NFT Games on BSC</title>  
@@ -132,25 +139,18 @@ const IndexPage = () => {
 <meta name="twitter:card" content="../images/image6.jpg" />
        </Helmet>
 
-      <Particles id="particles-js" width="100%" height="100vh" params={particlesParams} style={{
-        backgroundColor: "transparent",
-        position: "absolute",
-        width: "100%",
-        height: "100%"
-      }}></Particles>
-
       <nav>
 
-      <StaticImage src="../images/logo.png" class="logo" />
+      <StaticImage src="../images/logo.png" className="logo" alt="czodiac logo" />
 
       <input type="checkbox" id="check" />
-      <label htmlFor="check" class="checkbtn">
-        <b class="fas fa-bars"></b>
+      <label htmlFor="check" className="checkbtn">
+        <b className="fas fa-bars"></b>
       </label>
 
       <ul id="menu">
         
-        <label htmlFor="check" class="closeBtn">
+        <label htmlFor="check" className="closeBtn">
           <b >X</b>
         </label>
         <li><a href="#AboutCzodiac">About Czodiac</a></li>
@@ -160,20 +160,20 @@ const IndexPage = () => {
         <li><a href="#Czfarm">Czfarm</a></li>
         <li><a href="#OurTeam">Our Team</a></li>
         <li><a href="#ContactUs">Contact Us</a></li>
-        <li><a class="btn-play" href="http://app.czodiac.com">Play Now</a></li>
+        <li><a className="btn-play" href="http://app.czodiac.com">Play Now</a></li>
         <br/>
       </ul>
 
       </nav>
 
-      <div class="content">
+      <div className="content">
 
-      <div class="item">
-      <div id="AboutCzodiac" class="jumpMarker" />
+      <div className="item">
+      <div id="AboutCzodiac" className="jumpMarker" />
 
         <h2 >About Czodiac</h2>
         <br/>
-        <StaticImage src="../images/image6.jpg" class="image" />
+        <StaticImage src="../images/image6.jpg" className="image" alt="about czodiac" />
         <br/><br/>
         <p>
           Chinese Zodiacs are believed to bring luck to those who truly believe. Many people around the globe believe in it’s power and plan their life according to what these signs tell them. We are on a mission to introduce a project that will ensure your crypto portfolio lucky!
@@ -182,15 +182,15 @@ const IndexPage = () => {
 
         <br/><br/>
 
-        <div class="btn-redirect">
-          <div class="btn"><a class="one" href="https://app.gitbook.com/@czodiac/s/czodiac-litepapper"><b>Whitepaper</b></a></div>
-          <div class="btn"><a class="two" href="http://app.czodiac.com"><b>Farm & Pool</b></a></div>
+        <div className="btn-redirect">
+          <div className="btn"><a className="one" href="https://app.gitbook.com/@czodiac/s/czodiac-litepapper"><b>Whitepaper</b></a></div>
+          <div className="btn"><a className="two" href="http://app.czodiac.com"><b>Farm & Pool</b></a></div>
         </div>
 
         <br/><br/>
       </div>
-      <div class="item">
-      <div id="CzodiacHunts" class="jumpMarker" />
+      <div className="item">
+      <div id="CzodiacHunts" className="jumpMarker" />
         <h2 >Czodiac Hunts</h2>
         <br/>
         <p>
@@ -198,15 +198,15 @@ const IndexPage = () => {
           <br/><br/>Now, we are in Tigerhunt with tigz token. You stake your TIGZ token to obtain Tiger Hunt Points (TigHP) which is the point by which winner of the game will be decided.
         </p>
       </div>
-      <div class="item">
-      <div id="TigerhuntFeatures" class="jumpMarker" />
+      <div className="item">
+      <div id="TigerhuntFeatures" className="jumpMarker" />
         <h2 >Tigerhunt features</h2>
         <br/>
         <p>
           Stake your TIGZ token to obtain Tiger Hunt Points (TigHP) To play the game 
         </p>
         <br/>
-        <StaticImage class="image" src="../images/tiger-image2.jpg" />
+        <StaticImage className="image" src="../images/tiger-image2.jpg" alt="tigherhunt" />
         <br/>
         <br/>
         <p>
@@ -217,7 +217,7 @@ const IndexPage = () => {
           Guard and Hunt
         </h3>
         <br/>
-        <StaticImage class="image" src="../images/tiger-image1.jpg" />
+        <StaticImage className="image" src="../images/tiger-image1.jpg" alt="guarding" />
         <br/>
         <br/>
         <p>
@@ -225,11 +225,11 @@ const IndexPage = () => {
         </p>
       </div>
 
-      <div class="play-btn-container">
+      <div className="play-btn-container">
         <a href="http://app.czodiac.com"><b>Play Now</b></a>
       </div>
-      <div id="CzodiacTokenomics" class="jumpMarker" />
-      <div class="item" >
+      <div id="CzodiacTokenomics" className="jumpMarker" />
+      <div className="item" >
         <h2 >Czodiac Tokenomics</h2>
         <br/>
         <p>
@@ -247,12 +247,12 @@ const IndexPage = () => {
         </p>
 
         
-        <div class="tokens">
-          <div class="token"><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5"><StaticImage src="../images/Tiger Logo.png" alt="" /></a><p>Tigerzodiac</p></div>
-          <div class="token"><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043"><StaticImage src="../images/czfarm logo.png" alt="" /></a><p>Czfarm</p></div>
-          <div class="token"><a href="https://bscscan.com/token/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0"><StaticImage src="../images/tigerhp.png" alt="" /></a><p>TigerHp</p></div>
+        <div className="tokens">
+          <div className="token"><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5"><StaticImage src="../images/Tiger Logo.png" alt="tigz logo" /></a><p>Tigerzodiac</p></div>
+          <div className="token"><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043"><StaticImage src="../images/czfarm logo.png" alt="czf logo" /></a><p>Czfarm</p></div>
+          <div className="token"><a href="https://bscscan.com/token/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0"><StaticImage src="../images/tigerhp.png" alt="tigzhp logo" /></a><p>TigerHp</p></div>
         </div>
-        <p class="token-contracts">
+        <p className="token-contracts">
           <b>Contracts</b>
           <ul>
             <li><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5">TIGZ: 0x535874bfbecac5f235717faea7c26d01c67b38c5</a></li>
@@ -262,13 +262,13 @@ const IndexPage = () => {
         </p>
       </div>
       <br/>
-      <div class="item">
+      <div className="item">
         
-      <div id="Czfarm" class="jumpMarker" />
+      <div id="Czfarm" className="jumpMarker" />
         <h2 >Czfarm and CzUSD</h2>
         <br/>
 
-        <StaticImage class="image" src="../images/czfarm.jpg" />
+        <StaticImage className="image" src="../images/czfarm.jpg" alt="czfarm" />
         <br/><br/>
         <p>
           CZFarm is a CZodiac farming token which can be used for earning rewards from PCS LP with CZUsd. It will enable the community to capture wealth via BUSD deposits into the CZUsd contract & allow the whole community to profit from the BUSD interest.
@@ -276,44 +276,44 @@ const IndexPage = () => {
         </p>
       </div>
 
-      <div class="our-team">
+      <div className="our-team">
         
-      <div id="OurTeam" class="jumpMarker" />
+      <div id="OurTeam" className="jumpMarker" />
         <h2 >
           Our Team
         </h2>
-        <StaticImage class="tm-border" src="../images/border-color.png" alt="" />
+        <StaticImage className="tm-border" src="../images/border-color.png" alt="Team" />
         <br/><br/>
-        <div class="team-member">
-          <StaticImage src="../images/admins/plastic 500x500.png" />
-          <h4>Plastic</h4>
+        <div className="team-member">
+          <StaticImage src="../images/admins/plastic 500x500.png" alt="Platic" />
+          <h4>Plastic Digits</h4>
           <p>CEO & Lead Dev</p>
-          <StaticImage class="border" src="../images/border_gray.png" alt="" />
+          <StaticImage className="border" src="../images/border_gray.png" alt="Plastic Digits Portrait" />
         </div>
 
-        <div class="team-member">
-          <StaticImage src="../images/admins/peter 500x500.png" />
+        <div className="team-member">
+          <StaticImage src="../images/admins/peter 500x500.png" alt="Peter" />
           <h4>Peter Gaven</h4>
           <p>Co COO & Community Manager</p>
-          <StaticImage class="border" src="../images/border_gray.png" alt="" />
+          <StaticImage className="border" src="../images/border_gray.png" alt="Peter Gaven Portrait" />
         </div>
 
-        <div class="team-member">
-          <StaticImage src="../images/admins/rayoshi 500x500.png" />
+        <div className="team-member">
+          <StaticImage src="../images/admins/rayoshi 500x500.png" alt="rayoshi" />
           <h4>Rayoshi</h4>
           <p>Co COO & Business Developer</p>
-          <StaticImage class="border" src="../images/border_gray.png" alt="" />
+          <StaticImage className="border" src="../images/border_gray.png" alt="Rayoshi Portrait" />
         </div>
 
-        <div class="team-member">
-          <StaticImage src="../images/admins/500x500.png" />
+        <div className="team-member">
+          <StaticImage src="../images/admins/500x500.png" alt="icashy" />
           <h4>Icashy</h4>
           <p>Graphic Artist</p>
-          <StaticImage class="border" src="../images/border_gray.png" alt="" />
+          <StaticImage className="border" src="../images/border_gray.png" alt="Icashy Portrait" />
         </div>
 
-        <div class="team-member">
-          <StaticImage src="../images/admins/gourav 500x500.png" />
+        <div className="team-member">
+          <StaticImage src="../images/admins/gourav 500x500.png" alt="Gourav Portrait"/>
           <h4>Gourav</h4>
           <p>Community Representative</p>
         </div>
@@ -321,31 +321,31 @@ const IndexPage = () => {
       </div>
 
 
-      <div class="social">
+      <div className="social">
         
-      <div id="ContactUs" class="jumpMarker" />
+      <div id="ContactUs" className="jumpMarker" />
         <h2 >
           Contact Us
         </h2>
-        <StaticImage class="tm-border" src="../images/border-color.png" alt="" />
+        <StaticImage className="tm-border" src="../images/border-color.png" alt="Contact" />
         <br/>
         <h4><a href="mailto:team@czodiac.com">team@czodiac.com</a></h4>
         <br/>
-        <ul class="row">
-          <li class="list-item">
-            <div class="twitter"><a href="https://twitter.com/zodiacs_c"><StaticImage src="../images/twitter.png" /></a></div>
+        <ul className="row">
+          <li className="list-item">
+            <div className="twitter"><a href="https://twitter.com/zodiacs_c"><StaticImage src="../images/twitter.png" alt="twitter" /></a></div>
           </li>
-          <li class="list-item">
-            <div class="discord"><a href="https://discord.gg/FEpu3xF2Hb"><StaticImage src="../images/discord.png" /></a></div>
+          <li className="list-item">
+            <div className="discord"><a href="https://discord.gg/FEpu3xF2Hb"><StaticImage src="../images/discord.png" alt="discord" /></a></div>
           </li>
-          <li class="list-item">
-            <div class="medium"><a href="https://czodiacs.medium.com/"><StaticImage src="../images/medium.png" /></a></div>
+          <li className="list-item">
+            <div className="medium"><a href="https://czodiacs.medium.com/"><StaticImage src="../images/medium.png" alt="medium" /></a></div>
           </li>
-          <li class="list-item">
-            <div class="github"><a href="https://github.com/chinese-zodiac/czodiac"><StaticImage src="../images/github.png" /></a></div>
+          <li className="list-item">
+            <div className="github"><a href="https://github.com/chinese-zodiac/czodiac"><StaticImage src="../images/github.png" alt="github" /></a></div>
           </li>
-          <li class="list-item">
-            <div class="telegram"><a href="https://t.me/CZodiacofficial"><StaticImage src="../images/telegram.png" /></a></div>
+          <li className="list-item">
+            <div className="telegram"><a href="https://t.me/CZodiacofficial"><StaticImage src="../images/telegram.png" alt="telegram" /></a></div>
           </li>
 
         </ul>
