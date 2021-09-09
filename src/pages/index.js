@@ -121,13 +121,13 @@ const IndexPage = () => {
           <br/><br/>The Tiger Zodiac have already been released and had a warm welcome and very strong hold among the community. The upcoming token is RabbitZodiac
           <br/><br/>The czodiac ecosystem have three bep 20 tokens with different use cases now
         </p>
-        <p><b>Details</b></p>
         <p>
-        <ul>
-          <li><b>Tigz:</b> Deflationary Reflect; 2.5% tx fee, 0.2% burn, 0.5% holders, 1.8% pools and events</li>
-          <li><b>TigzHP:</b> Inflationary; increases when played, 5% burn on successful hunts</li>
-          <li><b>CZF:</b> Inflationary; 888/block for farms, 50/block for dev team, up to 10m/month for pools</li>
-        </ul>
+          <b>Details</b>
+          <ul>
+            <li><b>Tigz:</b> Deflationary Reflect; 2.5% tx fee, 0.2% burn, 0.5% holders, 1.8% pools and events</li>
+            <li><b>TigzHP:</b> Inflationary; increases when played, 5% burn on successful hunts</li>
+            <li><b>CZF:</b> Inflationary; 888/block for farms, 50/block for dev team, up to 10m/month for pools</li>
+          </ul>
         </p>
 
         
@@ -136,13 +136,13 @@ const IndexPage = () => {
           <div class="token"><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043"><StaticImage src="../images/czfarm logo.png" alt="" /></a><p>Czfarm</p></div>
           <div class="token"><a href="https://bscscan.com/token/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0"><StaticImage src="../images/tigerhp.png" alt="" /></a><p>TigerHp</p></div>
         </div>
-        <p><b>Contracts</b></p>
         <p class="token-contracts">
-        <ul>
-          <li><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5">TIGZ: 0x535874bfbecac5f235717faea7c26d01c67b38c5</a></li>
-          <li><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043">CZF: 0x7c1608C004F20c3520f70b924E2BfeF092dA0043</a></li>
-          <li><a href="https://bscscan.com/address/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0">TIGZHP: 0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0</a></li>
-        </ul>
+          <b>Contracts</b>
+          <ul>
+            <li><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5">TIGZ: 0x535874bfbecac5f235717faea7c26d01c67b38c5</a></li>
+            <li><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043">CZF: 0x7c1608C004F20c3520f70b924E2BfeF092dA0043</a></li>
+            <li><a href="https://bscscan.com/address/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0">TIGZHP: 0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0</a></li>
+          </ul>
         </p>
       </div>
       <br/>
