@@ -4,6 +4,117 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import Particles from "react-particles-js"
 
+const particlesParams = {
+  particles: {
+    number: {
+      value: 150,
+      density: {
+        enable: true,
+        value_area: 2500
+      }
+    },
+    color: {
+      value: "#ffffff"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000"
+      },
+      polygon: {
+        nb_sides: 5
+      },
+      image: {
+        src: "img/github.svg",
+        width: 100,
+        height: 100
+      }
+    },
+    opacity: {
+      value: 0.5,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false
+      }
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 40,
+        size_min: 0.1,
+        sync: false
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200
+      }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: false,
+        mode: "grab"
+      },
+      onclick: {
+        enable: false,
+        mode: "push"
+      },
+      resize: false
+    },
+    modes: {
+      grab: {
+        distance: 400,
+        line_linked: {
+          opacity: 1
+        }
+      },
+      bubble: {
+        distance: 400,
+        size: 40,
+        duration: 2,
+        opacity: 8,
+        speed: 3
+      },
+      repulse: {
+        distance: 200,
+        duration: 0.4
+      },
+      push: {
+        particles_nb: 4
+      },
+      remove: {
+        particles_nb: 2
+      }
+    }
+  },
+  retina_detect: true
+}
+
 // markup
 const IndexPage = () => {
   return (
@@ -13,13 +124,20 @@ const IndexPage = () => {
           <title>CZodiac - DeFi NFT Games on BSC</title>  
     <meta name="description" content= "Lucky portfolios with CZF, Chinese Zodiac NFTs and tokens, farming, defi, and games all on the BSC blockchain." />
     <meta name="robots" content= "index, follow" />
-          <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="canonical" href="https://czodiac.com" />
 <meta property="og:title" content="CZodiac - DeFi NFT Games on BSC" />
-<meta property="og:image" content="https://czodiac.com/images/image6.jpg" />
+<meta property="og:image" content="../images/image6.jpg" />
 <meta property="og:description" content="Lucky portfolios with CZF, Chinese Zodiac NFTs and tokens, farming, defi, and games all on the BSC blockchain." />
 <meta property="og:url" content="https://czodiac.com" />
-<meta name="twitter:card" content="images/image6.jpg" />
+<meta name="twitter:card" content="../images/image6.jpg" />
        </Helmet>
+
+      <Particles id="particles-js" width="100%" height="100vh" params={particlesParams} style={{
+        backgroundColor: "transparent",
+        position: "absolute",
+        width: "100%",
+        height: "100%"
+      }}></Particles>
 
       <nav>
 
@@ -47,8 +165,6 @@ const IndexPage = () => {
       </ul>
 
       </nav>
-
-      <Particles id="particles-js"></Particles>
 
       <div class="content">
 
