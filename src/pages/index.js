@@ -1,11 +1,26 @@
 import * as React from "react"
 import "../css/index.css"
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
+import Particles from "react-particles-js"
 
 // markup
 const IndexPage = () => {
   return (
     <main >
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>CZodiac - DeFi NFT Games on BSC</title>  
+    <meta name="description" content= "Lucky portfolios with CZF, Chinese Zodiac NFTs and tokens, farming, defi, and games all on the BSC blockchain." />
+    <meta name="robots" content= "index, follow" />
+          <link rel="canonical" href="http://mysite.com/example" />
+<meta property="og:title" content="CZodiac - DeFi NFT Games on BSC" />
+<meta property="og:image" content="https://czodiac.com/images/image6.jpg" />
+<meta property="og:description" content="Lucky portfolios with CZF, Chinese Zodiac NFTs and tokens, farming, defi, and games all on the BSC blockchain." />
+<meta property="og:url" content="https://czodiac.com" />
+<meta name="twitter:card" content="images/image6.jpg" />
+       </Helmet>
+
       <nav>
 
       <StaticImage src="../images/logo.png" class="logo" />
@@ -16,6 +31,10 @@ const IndexPage = () => {
       </label>
 
       <ul id="menu">
+        
+        <label htmlFor="check" class="closeBtn">
+          <b >X</b>
+        </label>
         <li><a href="#AboutCzodiac">About Czodiac</a></li>
         <li><a href="#CzodiacHunts">Czodiac Hunts</a></li>
         <li><a href="#TigerhuntFeatures">Tigerhunt features</a></li>
@@ -24,17 +43,19 @@ const IndexPage = () => {
         <li><a href="#OurTeam">Our Team</a></li>
         <li><a href="#ContactUs">Contact Us</a></li>
         <li><a class="btn-play" href="http://app.czodiac.com">Play Now</a></li>
+        <br/>
       </ul>
 
       </nav>
 
-      <div id="particles-js"></div>
+      <Particles id="particles-js"></Particles>
 
       <div class="content">
 
       <div class="item">
+      <div id="AboutCzodiac" class="jumpMarker" />
 
-        <h2 id="AboutCzodiac">About Czodiac</h2>
+        <h2 >About Czodiac</h2>
         <br/>
         <StaticImage src="../images/image6.jpg" class="image" />
         <br/><br/>
@@ -53,7 +74,8 @@ const IndexPage = () => {
         <br/><br/>
       </div>
       <div class="item">
-        <h2 id="CzodiacHunts">Czodiac Hunts</h2>
+      <div id="CzodiacHunts" class="jumpMarker" />
+        <h2 >Czodiac Hunts</h2>
         <br/>
         <p>
           Czodiac Hunts are simple dapp game with 12 czodiac tokens to earn Limited edition NFTs. The Holders of NFTs will receive share of all upcoming zodiac token and able to participate governance of project. 
@@ -61,7 +83,8 @@ const IndexPage = () => {
         </p>
       </div>
       <div class="item">
-        <h2 id="TigerhuntFeatures">Tigerhunt features</h2>
+      <div id="TigerhuntFeatures" class="jumpMarker" />
+        <h2 >Tigerhunt features</h2>
         <br/>
         <p>
           Stake your TIGZ token to obtain Tiger Hunt Points (TigHP) To play the game 
@@ -89,24 +112,44 @@ const IndexPage = () => {
       <div class="play-btn-container">
         <a href="http://app.czodiac.com"><b>Play Now</b></a>
       </div>
-
+      <div id="CzodiacTokenomics" class="jumpMarker" />
       <div class="item" >
-        <h2 id="CzodiacTokenomics">Czodiac Tokenomics</h2>
+        <h2 >Czodiac Tokenomics</h2>
         <br/>
         <p>
           The CZodiac Tokens start with OxZodiac, since 2021 is the year of the Ox. After each month instead of yearly swap we will do a token swap every 30 days to the next Zodiac decreasing the supply 8:1 until we finish the 12 Chinese Zodiac Sign and will have a fixed supply of CZodiac Token. Therefore in the that order you will have already witnessed the release of TigerZodiac. 
           <br/><br/>The Tiger Zodiac have already been released and had a warm welcome and very strong hold among the community. The upcoming token is RabbitZodiac
           <br/><br/>The czodiac ecosystem have three bep 20 tokens with different use cases now
         </p>
+        <p><b>Details</b></p>
+        <p>
+        <ul>
+          <li><b>Tigz:</b> Deflationary Reflect; 2.5% tx fee, 0.2% burn, 0.5% holders, 1.8% pools and events</li>
+          <li><b>TigzHP:</b> Inflationary; increases when played, 5% burn on successful hunts</li>
+          <li><b>CZF:</b> Inflationary; 888/block for farms, 50/block for dev team, up to 10m/month for pools</li>
+        </ul>
+        </p>
+
+        
         <div class="tokens">
           <div class="token"><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5"><StaticImage src="../images/Tiger Logo.png" alt="" /></a><p>Tigerzodiac</p></div>
           <div class="token"><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043"><StaticImage src="../images/czfarm logo.png" alt="" /></a><p>Czfarm</p></div>
           <div class="token"><a href="https://bscscan.com/token/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0"><StaticImage src="../images/tigerhp.png" alt="" /></a><p>TigerHp</p></div>
         </div>
+        <p><b>Contracts</b></p>
+        <p class="token-contracts">
+        <ul>
+          <li><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5">TIGZ: 0x535874bfbecac5f235717faea7c26d01c67b38c5</a></li>
+          <li><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043">CZF: 0x7c1608C004F20c3520f70b924E2BfeF092dA0043</a></li>
+          <li><a href="https://bscscan.com/address/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0">TIGZHP: 0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0</a></li>
+        </ul>
+        </p>
       </div>
       <br/>
       <div class="item">
-        <h2 id="Czfarm">Czfarm and CzUSD</h2>
+        
+      <div id="Czfarm" class="jumpMarker" />
+        <h2 >Czfarm and CzUSD</h2>
         <br/>
 
         <StaticImage class="image" src="../images/czfarm.jpg" />
@@ -118,7 +161,9 @@ const IndexPage = () => {
       </div>
 
       <div class="our-team">
-        <h2 id="OurTeam">
+        
+      <div id="OurTeam" class="jumpMarker" />
+        <h2 >
           Our Team
         </h2>
         <StaticImage class="tm-border" src="../images/border-color.png" alt="" />
@@ -161,7 +206,9 @@ const IndexPage = () => {
 
 
       <div class="social">
-        <h2 id="ContactUs">
+        
+      <div id="ContactUs" class="jumpMarker" />
+        <h2 >
           Contact Us
         </h2>
         <StaticImage class="tm-border" src="../images/border-color.png" alt="" />
@@ -180,6 +227,9 @@ const IndexPage = () => {
           </li>
           <li class="list-item">
             <div class="github"><a href="https://github.com/chinese-zodiac/czodiac"><StaticImage src="../images/github.png" /></a></div>
+          </li>
+          <li class="list-item">
+            <div class="telegram"><a href="https://t.me/CZodiacofficial"><StaticImage src="../images/telegram.png" /></a></div>
           </li>
 
         </ul>

@@ -8,6 +8,18 @@ module.exports = {
     'gatsby-plugin-ipfs',    
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `CZodiac`,
+        short_name: `CZodiac`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+        icon: `./src/images/czodiac-coin.png`
+      }
+    }
   ]
 };

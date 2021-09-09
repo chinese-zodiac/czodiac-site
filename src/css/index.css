@@ -83,6 +83,15 @@ nav ul li .btn-play{
 #check{
 				display: none;
 }
+
+
+.closeBtn {
+	float: right;
+	padding:20px;
+	cursor: pointer;
+	font-size: 20px;
+	display:none;
+}
 @media (max-width: 952px){
 				nav ul li a{
 								font-size: 16px;
@@ -90,6 +99,9 @@ nav ul li .btn-play{
 }
 @media (max-width: 1400px){
 				.checkbtn{
+								display: block;
+				}
+				.closeBtn{
 								display: block;
 				}
 				.checkbtn b:before{
@@ -245,7 +257,12 @@ nav ul li .btn-play{
 .content .social .row .list-item div a img{
 				width: 30px;
 				height: auto;
-				margin-top: 5px;
+				margin-top: 7px;
+				margin-left:auto;
+				margin-right:auto;
+}
+.content .social .row .list-item div:hover{
+	box-shadow: white 0px 0px 2px 2px;
 }
 
 .content .social .row .list-item .twitter{
@@ -256,6 +273,13 @@ nav ul li .btn-play{
 				background: #5865F2;
 }
 .content .social .row .list-item .discord a img{
+				width: 25px;
+				height: auto;
+}
+.content .social .row .list-item .telegram{
+				background: #0088cc;
+}
+.content .social .row .list-item .telegram a img{
 				width: 25px;
 				height: auto;
 }
@@ -326,4 +350,19 @@ nav ul li .btn-play{
 .content .item .tokens .token .gatsby-image-wrapper:hover{
 	border-radius:40px;
 	box-shadow: white 0px 0px 5px 5px;
+}
+
+.token-contracts ul li a{
+	font-family: monospace;
+	text-decoration: underline;
+	color:white;
+}
+
+.token-contracts ul li a:hover{
+	color:lightgray;
+}
+
+.jumpMarker {
+	height: 70px;
+	width: 100%;
 }
