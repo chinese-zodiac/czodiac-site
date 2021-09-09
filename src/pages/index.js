@@ -177,7 +177,7 @@ const IndexPage = () => {
 
         <div class="team-member">
           <StaticImage src="../images/admins/peter 500x500.png" />
-          <h4>Piter Gaven</h4>
+          <h4>Peter Gaven</h4>
           <p>Co COO & Community Manager</p>
           <StaticImage class="border" src="../images/border_gray.png" alt="" />
         </div>
