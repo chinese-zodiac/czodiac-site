@@ -5,7 +5,6 @@ module.exports = {
   },
   pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
-    'gatsby-plugin-ipfs',    
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -20,6 +19,7 @@ module.exports = {
         display: `standalone`,
         icon: `./src/images/czodiac-coin.png`
       }
-    }
+    },    
+    'gatsby-plugin-ipfs'
   ]
 };
