@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				list-style: none;
+				box-sizing: border-box;
+				font-family: 'Poppins',sans-serif;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ 			-webkit-tap-highlight-color: transparent;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+ 			user-select: none;
+}
+
+#particles-js{
+				height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -100;
+}
+
+body{
+				background: #010028;
+				/*background-image: url('https://i.gifer.com/7dDt.gif'); */
+				color: white;
+}
+p{
+				color: #DDDFE9;
+}
+nav{
+				background: #010028;
+				height: 60px;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				z-index: 1;
+}
+nav .logo{
+				display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+nav ul{
+				float: right;
+				margin-right: 20px;
+				z-index: 200px;
+}
+nav ul li{
+				display: inline-block;
+				line-height: 60px;
+				margin: 0 5px;
+}
+nav ul li a{
+				color: white;
+				font-size: 17px;
+				padding: 7px 13px;
+				border-radius: 3px;
+				text-decoration: none;
+}
+nav ul li .btn-play{
+				color: black;
+				font-size: 17px;
+				padding: 7px 13px;
+				border-radius: 3px;
+				text-decoration: none;
+				background: #FFD200;
+}
+.checkbtn{
+				font-size: 30px;
+				color: white;
+				float: right;
+				line-height: 60px;
+				margin-right: 20px;
+				cursor: pointer;
+				display: none;
+}
+#check{
+				display: none;
+}
+@media (max-width: 952px){
+				nav ul li a{
+								font-size: 16px;
+				}
+}
+@media (max-width: 1400px){
+				.checkbtn{
+								display: block;
+				}
+				.checkbtn b:before{
+								content: "\2630";
+				}
+				#menu{
+								position: fixed;
+								width: 80%;
+								height: 100vh;
+								background: #010028;
+								top: 60px;
+								left: -100%;
+								font-weight: bold;
+								text-align: center;
+								transition: all .5s;
+				}
+				#menu li{
+								display: block;
+								margin: 20px 0;
+								line-height: 30px;
+				}
+				#menu li a{
+								font-size: 20px;
+				}
+				a.active,a:hover{
+								background: none;
+								color: cyan;
+				}
+				#check:checked ~ #menu{
+								left: 0;
+				}
+				
+				.content{
+							padding: 200px;
+				}
+}
+.border{
+				border-radius: 10px;
+}
+.content{
+				margin-top: 60px;
+				padding: 10px;
+				z-index: 1;
+}
+.content .item{
+				padding: 10px;
+}
+
+.content .item .tokens{
+				text-align: center;
+}
+.tokens .token img{
+				width: 80px; 
+				height: auto;
+}
+.content .item .tokens .token{
+				display: inline-block;
+				margin: 5px;
+				text-align: center;
+}
+.content .item .image{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block !important;
+}
+.content .item .image-tiger{
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+				max-width: 640px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+}
+.content .item p{
+				margin-bottom: 10px;
+				display: block;
+				max-width:640px;
+				margin-left:auto;
+				margin-right:auto;
+}
+.content .item h2{
+				display: block;
+				max-width:640px;
+				margin-left:auto;
+				margin-right:auto;
+}
+
+.content .item h3{
+				margin-bottom: 10px;
+				display: block;
+				max-width:640px;
+				margin-left:auto;
+				margin-right:auto;
+}
+.content .our-team{
+				padding: 10px;
+				max-width:660px;
+				margin-left:auto;
+				margin-right:auto;
+				display: block;
+}
+.content .our-team h2{
+				margin-bottom: 10px;
+}
+.content .our-team .tm-border{
+				margin-bottom: 20px;
+				border-radius: 10px;
+}
+.content .our-team .team-member{
+				display: block;
+				margin-bottom: 30px;
+}
+.content .our-team .team-member img{
+				height: auto;
+				width: 150px;
+}
+
+.content .our-team .team-member .border{
+				height: 2px;
+				width: 100%;
+}
+.content .social{
+				padding: 10px;
+				max-width:660px;
+				margin-left:auto;
+				margin-right:auto;
+				display: block;
+}
+.content .social h4 a{
+				color: white;
+}
+.content .social .row{
+				display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+}
+.content .social .row .list-item{
+				display: inline;
+}
+.content .social .row .list-item div{
+				display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+.content .social .row .list-item div a img{
+				width: 30px;
+				height: auto;
+				margin-top: 5px;
+}
+
+.content .social .row .list-item .twitter{
+				background: #1DA1F2;
+}
+
+.content .social .row .list-item .discord{
+				background: #5865F2;
+}
+.content .social .row .list-item .discord a img{
+				width: 25px;
+				height: auto;
+}
+
+.content .social .row .list-item .github{
+				background: #24292F;
+}
+
+.content .social .row .list-item .mail{
+				background: #ff4040;
+}
+.content .social .row .list-item .medium{
+				background: #292929;
+}
+.content .social h2{
+				margin-bottom: 10px;
+}
+.content .social .tm-border{
+				margin-bottom: 20px;
+				border-radius: 10px;
+}
+.content .play-btn-container{
+				text-align: center;
+				padding: 40px;
+}
+
+.content .play-btn-container a{
+				padding: 7px 13px;
+				background: #FFD200;
+				color: black;
+				font-size: 20px;
+				border-radius: 5px;
+}
+
+.content .item .btn-redirect{
+				text-align: center;
+}
+.content .item .btn-redirect .btn{
+				display: inline-block;
+				margin: 5px;
+				text-align: center;
+}
+.content .item .btn-redirect .btn .one{
+				padding: 7px 13px;
+				color: white;
+				font-size: 18px;
+				border-radius: 5px;
+				border: 2px solid white;
+}
+
+.content .item .btn-redirect .btn .two{
+				padding: 7px 13px;
+				background: #FFD200;
+				color: black;
+				font-size: 18px;
+				border-radius: 5px;
+}
+
+
+#menu li a.active,#menu li a:hover,.btn:hover,.btn a:hover,
+.content .item .btn-redirect .btn .two:hover, .content .item .btn-redirect .btn .one:hover,
+.play-btn-container a:hover{
+	background: white;
+	color: #1b1b1b;
+	transition: .5s;
+}
+
+.content .item .tokens .token .gatsby-image-wrapper:hover{
+	border-radius:40px;
+	box-shadow: white 0px 0px 5px 5px;
+}
