@@ -162,7 +162,7 @@ const IndexPage = () => {
           <br/><br/>
 
           <div className="btn-redirect">
-            <div className="btn"><a className="one" href="https://app.gitbook.com/@czodiac/s/czodiac-litepapper"><b>Whitepaper</b></a></div>
+            <div className="btn"><a className="one" href="https://czodiac.gitbook.io/czodiac-litepapper/"><b>Whitepaper</b></a></div>
             <div className="btn"><a className="two" href="http://app.czodiac.com"><b>Farm &amp; Pool</b></a></div>
           </div>
           <br/><br/>
