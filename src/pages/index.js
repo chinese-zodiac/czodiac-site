@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useEffect, useState } from "react";
 import "../css/index.css"
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
@@ -117,12 +118,13 @@ const particlesParams = {
 
 // markup
 const IndexPage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (<div>
     <main >
 
       <nav>
         <StaticImage src="../images/logo.png" className="logo" alt="czodiac logo" />
-        <input type="checkbox" id="check" />
+        <input type="checkbox" id="check" onChange={()=>setIsMenuOpen(!isMenuOpen)} checked={isMenuOpen} />
         <label htmlFor="check" className="checkbtn">
           <b className="fas fa-bars"></b>
         </label>
@@ -131,14 +133,14 @@ const IndexPage = () => {
             <b >X</b>
           </label>
           <ul>
-            <li><a href="#AboutCzodiac">About Czodiac</a></li>
-            <li><a href="#CzodiacHunts">Czodiac Hunts</a></li>
-            <li><a href="#TigerhuntFeatures">Tigerhunt features</a></li>
-            <li><a href="#CzodiacTokenomics">Czodiac Tokenomics</a></li>
-            <li><a href="#Czfarm">Czfarm</a></li>
-            <li><a href="#OurTeam">Our Team</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
-            <li><a className="btn-play" href="http://app.czodiac.com">Play Now</a></li>
+            <li><a href="#AboutCzodiac" onClick={()=>setIsMenuOpen(false)}>About Czodiac</a></li>
+            <li><a href="#CzodiacHunts" onClick={()=>setIsMenuOpen(false)}>Czodiac Hunts</a></li>
+            <li><a href="#TigerhuntFeatures" onClick={()=>setIsMenuOpen(false)}>Tigerhunt features</a></li>
+            <li><a href="#CzodiacTokenomics" onClick={()=>setIsMenuOpen(false)}>Czodiac Tokenomics</a></li>
+            <li><a href="#Czfarm" onClick={()=>setIsMenuOpen(false)}>Czfarm</a></li>
+            <li><a href="#OurTeam" onClick={()=>setIsMenuOpen(false)}>Our Team</a></li>
+            <li><a href="#ContactUs" onClick={()=>setIsMenuOpen(false)}>Contact Us</a></li>
+            <li><a className="btn-play" href="http://app.czodiac.com" onClick={()=>setIsMenuOpen(false)}>Play Now</a></li>
             <br/>
           </ul>
         </div>
@@ -320,7 +322,7 @@ const IndexPage = () => {
 
           </ul>
         </div>
-      </div>           
+      </div>        
     </main>
       <div id="particles-js">
         <div>
