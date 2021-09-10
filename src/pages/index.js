@@ -130,7 +130,7 @@ const IndexPage = () => {
         <label htmlFor="check" className="closeBtn">
             <b >X</b>
           </label>
-          <ul id="menu">
+          <ul>
             <li><a href="#AboutCzodiac">About Czodiac</a></li>
             <li><a href="#CzodiacHunts">Czodiac Hunts</a></li>
             <li><a href="#TigerhuntFeatures">Tigerhunt features</a></li>
