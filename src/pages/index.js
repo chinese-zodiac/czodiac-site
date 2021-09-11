@@ -221,11 +221,13 @@ const IndexPage = () => {
             <li><b>Tigz:</b> Deflationary Reflect; 2.5% tx fee, 0.2% burn, 0.5% holders, 1.8% pools and events</li>
             <li><b>TigzHP:</b> Inflationary; increases when played, 5% burn on successful hunts</li>
             <li><b>CZF:</b> Inflationary; 888/block for farms, 50/block for dev team, up to 10m/month for pools</li>
+            <li><b>CZUSD:</b> Stablecoin; Algorithmic peg to $1 BUSD, overcollateralized debt with 0 fees, liquidations, interest.</li>
           </ul>          
           <div className="tokens">
             <div className="token"><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5"><StaticImage src="../images/Tiger Logo.png" alt="tigz logo" /></a><p>Tigerzodiac</p></div>
             <div className="token"><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043"><StaticImage src="../images/czfarm logo.png" alt="czf logo" /></a><p>Czfarm</p></div>
             <div className="token"><a href="https://bscscan.com/token/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0"><StaticImage src="../images/tigerhp.png" alt="tigzhp logo" /></a><p>TigerHp</p></div>
+            <div className="token"><a href="https://bscscan.com/token/0xe68b79e51bf826534ff37aa9cee71a3842ee9c70"><StaticImage src="../images/czusd-logo.png" alt="czusd logo" /></a><p>CZUSD</p></div>
           </div>
           <p className="token-contracts">
             <b>Contracts</b>
@@ -234,6 +236,7 @@ const IndexPage = () => {
             <li><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5">TIGZ: &nbsp;&nbsp;0x535874bfbecac5f235717faea7c26d01c67b38c5</a></li>
             <li><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043">CZF: &nbsp;&nbsp;&nbsp;0x7c1608C004F20c3520f70b924E2BfeF092dA0043</a></li>
             <li><a href="https://bscscan.com/address/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0">TIGZHP: 0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0</a></li>
+            <li><a href="https://bscscan.com/address/0xe68b79e51bf826534ff37aa9cee71a3842ee9c70">CZUSD: 0xe68b79e51bf826534ff37aa9cee71a3842ee9c70</a></li>
           </ul>
         </div>
         <div className="item">
