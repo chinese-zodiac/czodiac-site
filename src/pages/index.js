@@ -290,8 +290,8 @@ const IndexPage = () => {
           </div>
 
           <div className="team-member">
-            <StaticImage src="../images/admins/gourav 500x500.png" alt="Gourav Portrait"/>
-            <h4>Gourav</h4>
+            <StaticImage src="../images/admins/sai 500x500.png" alt="Sai Portrait"/>
+            <h4>Sai</h4>
             <p>Community Representative</p>
           </div>
         </div>
