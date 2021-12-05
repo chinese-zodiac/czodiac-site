@@ -134,8 +134,6 @@ const IndexPage = () => {
           </label>
           <ul>
             <li><a href="#AboutCzodiac" onClick={()=>setIsMenuOpen(false)}>About Czodiac</a></li>
-            <li><a href="#CzodiacHunts" onClick={()=>setIsMenuOpen(false)}>Czodiac Hunts</a></li>
-            <li><a href="#TigerhuntFeatures" onClick={()=>setIsMenuOpen(false)}>Tigerhunt features</a></li>
             <li><a href="#CzodiacTokenomics" onClick={()=>setIsMenuOpen(false)}>Czodiac Tokenomics</a></li>
             <li><a href="#Czfarm" onClick={()=>setIsMenuOpen(false)}>Czfarm</a></li>
             <li><a href="#OurTeam" onClick={()=>setIsMenuOpen(false)}>Our Team</a></li>
@@ -154,103 +152,122 @@ const IndexPage = () => {
           <br/>
           <StaticImage src="../images/image6.jpg" className="image" alt="about czodiac" />
           <br/><br/>
-          <p>
-            Chinese Zodiacs are believed to bring luck to those who truly believe. Many people around the globe believe in it’s power and plan their life according to what these signs tell them. We are on a mission to introduce a project that will ensure your crypto portfolio lucky!
-            <br/><br/>Since we are in 2021, we will start with OX, and after each month instead of yearly swap we will do a token swap every 30days to the next Zodiac decreasing the supply 8:1 until we finish the 12 Chinese Zodiacs and will have a fixed supply of CZodiac Token.
-          </p>
-
-          <br/><br/>
 
           <div className="btn-redirect">
             <div className="btn"><a className="one" href="https://czodiac.gitbook.io/czodiac-litepapper/"><b>Whitepaper</b></a></div>
             <div className="btn"><a className="two" href="http://app.czodiac.com"><b>Farm &amp; Pool</b></a></div>
           </div>
           <br/><br/>
+          <p >
+            CZodiac's <a href="https://app.czodiac.com/">defi
+            dapps at app.czodiac.com</a> empower
+            the community to earn high interest with <a href="https://bscscan.com/token/0x7c1608C004F20c3520f70b924E2BfeF092dA0043">CZF 
+            (Chinese Zodiac Farming Token)</a>. These
+            rates are created by actual returns of capital instead of the low
+            rates set by goverment decree in traditional finance. It does so
+            through several major innovations.
+            </p><br/>
+            <ul>
+              <li><p ><strong>Exotic
+              Farms: </strong>Deliver LP and earn vesting CZF every second with no
+              Impermanent Loss (IL). Delivered LP is transferred to the protocol's
+              treasury, creating a rising price floor.</p></li>
+              <li><p ><strong>Chrono
+              Pools: </strong>Defi v2 style pools with per block vesting. Users
+              stake CZF to earn other tokens each block. Fast Forward delivers
+              rewards from the future into the present at a discount. 
+              </p></li>
+              <li><p ><strong>Stim
+              Farms: </strong>Defi v2 style farms inspired by Olympus Dao (OHM).
+              Users deliver LP tokens to the protocol in exchange for high APY and
+              their deposit returned as CZF after 1 week. Purges toxic LP from v1
+              farms and provides higher quality liquidity. 
+              </p></li>
+              <li><p ><strong>Farms
+              v1</strong>: Farms which increase CZF liquidity while simultaneously
+              locking CZF. All farms are against CZF pairs meaning farmers are
+              rewarded with high APR for supporting CZF instead of dumping. 
+              </p></li>
+              <li><p ><strong>Antidump
+              Vaults</strong>: Single asset vaults which earn high APY without
+              selling any tokens. Vault depositers can earn APY on the base asset
+              (such as BNB) with CZF on top. The protocol tokens earned are packed
+              into Pools. 
+              </p></li>
+              <li><p ><strong>Scorch
+              Peg</strong>: Automatically pegs CZUSD to $1 by burning CZF. The peg
+              deposits trading profits from holding the peg into vaults to earn
+              interest. This interest is then used to burn CZF, reducing supply. 
+              </p></li>
+              <li><p ><strong>Pools
+              v1</strong>: Tokens collected from dapps and partners are then
+              distributed to CZF stakers via pools with high APR. 
+              </p></li>
+              <li><p ><strong>Exempt
+              Borrow</strong>: Deposit CZF to borrow up to 75% of the value in
+              CZUSD. All borrows are exempt from interest and liquidation. Users
+              can leverage their CZF to gain increased price exposure without the
+              risk of losing their underlying capital. 
+              </p></li>
+              <li><p ><strong>Catalytic
+              Development</strong>: CZodiac community members building products
+              receive a salary directly tied to the value of CZF. These
+              development incentives catalyze products that increase the value of
+              CZF. 
+              </p></li>
+            </ul>
+            <p ><br/>
+            More features
+            are under development by devs from the CZodiac community. These
+            include <strong>Dynamic Emissions</strong>, <strong>Chrono Pools</strong>,
+            <strong>Exotic Auctions</strong>, <strong>NFT Staking v1</strong>,
+            <strong>Robo Pools</strong> and<strong> Allotment Voting</strong>. <br/>
+            <br/>
+            <br/>
+
+            </p>
         </div>
-        <div className="item">
-        <div id="CzodiacHunts" className="jumpMarker" />
-          <h2 >Czodiac Hunts</h2>
-          <br/>
-          <p>
-            Czodiac Hunts are simple dapp game with 12 czodiac tokens to earn Limited edition NFTs. The Holders of NFTs will receive share of all upcoming zodiac token and able to participate governance of project. 
-            <br/><br/>Now, we are in Tigerhunt with tigz token. You stake your TIGZ token to obtain Tiger Hunt Points (TigHP) which is the point by which winner of the game will be decided.
-          </p>
-        </div>
-        <div className="item">
-          <div id="TigerhuntFeatures" className="jumpMarker" />
-            <h2 >Tigerhunt features</h2>
-            <br/>
-            <p>
-              Stake your TIGZ token to obtain Tiger Hunt Points (TigHP) To play the game 
-            </p>
-            <br/>
-            <StaticImage className="image" src="../images/tiger-image2.jpg" alt="tigherhunt" />
-            <br/>
-            <br/>
-            <p>
-              Eat, Sleep, Drink, and Poop that lets you gain points based on your staked TIGZ.
-            </p>
-            <br/>
-            <h3>
-              Guard and Hunt
-            </h3>
-            <br/>
-            <StaticImage className="image" src="../images/tiger-image1.jpg" alt="guarding" />
-            <br/>
-            <br/>
-            <p>
-              People with more TigHP can hunt you or you can hunt unprotected players to steal 5% of their TigHP and burn 5% more from them unless the player have a guard.
-            </p>
-          </div>
-          <div className="play-btn-container">
-            <a href="http://app.czodiac.com"><b>Play Now</b></a>
-          </div>
         <div className="item" >
           <div id="CzodiacTokenomics" className="jumpMarker" />
           <h2 >Czodiac Tokenomics</h2>
-          <br/>
-          <p>
-            The CZodiac Tokens start with OxZodiac, since 2021 is the year of the Ox. After each month instead of yearly swap we will do a token swap every 30 days to the next Zodiac decreasing the supply 8:1 until we finish the 12 Chinese Zodiac Sign and will have a fixed supply of CZodiac Token. Therefore in the that order you will have already witnessed the release of TigerZodiac. 
-            <br/><br/>The Tiger Zodiac have already been released and had a warm welcome and very strong hold among the community. The upcoming token is RabbitZodiac
-            <br/><br/>The czodiac ecosystem have three bep 20 tokens with different use cases now
-          </p>
-          <p>
-            <b>Details</b>
-          </p>
           <ul>
-            <li><b>Tigz:</b> Deflationary Reflect; 2.5% tx fee, 0.2% burn, 0.5% holders, 1.8% pools and events</li>
-            <li><b>TigzHP:</b> Inflationary; increases when played, 5% burn on successful hunts</li>
-            <li><b>CZF:</b> Inflationary; 888/block for farms, 50/block for dev team, up to 10m/month for pools</li>
+            <li><b>CZF:</b> Inflationary; emission rate fluctuates based on demand.</li>
             <li><b>CZUSD:</b> Stablecoin; Algorithmic peg to $1 BUSD, overcollateralized debt with 0 fees, liquidations, interest.</li>
           </ul>          
           <div className="tokens">
-            <div className="token"><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5"><StaticImage src="../images/Tiger Logo.png" alt="tigz logo" /></a><p>Tigerzodiac</p></div>
             <div className="token"><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043"><StaticImage src="../images/czfarm logo.png" alt="czf logo" /></a><p>Czfarm</p></div>
-            <div className="token"><a href="https://bscscan.com/token/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0"><StaticImage src="../images/tigerhp.png" alt="tigzhp logo" /></a><p>TigerHp</p></div>
             <div className="token"><a href="https://bscscan.com/token/0xe68b79e51bf826534ff37aa9cee71a3842ee9c70"><StaticImage src="../images/czusd-logo.png" alt="czusd logo" /></a><p>CZUSD</p></div>
           </div>
           <p className="token-contracts">
             <b>Contracts</b>
           </p>
           <ul className="contracts">
-            <li><a href="https://bscscan.com/address/0x535874bfbecac5f235717faea7c26d01c67b38c5">TIGZ: &nbsp;&nbsp;0x535874bfbecac5f235717faea7c26d01c67b38c5</a></li>
             <li><a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043">CZF: &nbsp;&nbsp;&nbsp;0x7c1608C004F20c3520f70b924E2BfeF092dA0043</a></li>
-            <li><a href="https://bscscan.com/address/0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0">TIGZHP: 0xDd2F98a97fc2A59b1f0f03DE63B4b41041a339B0</a></li>
             <li><a href="https://bscscan.com/address/0xe68b79e51bf826534ff37aa9cee71a3842ee9c70">CZUSD: 0xe68b79e51bf826534ff37aa9cee71a3842ee9c70</a></li>
           </ul>
         </div>
         <div className="item">
           
           <div id="Czfarm" className="jumpMarker" />
-          <h2 >Czfarm and CzUSD</h2>
+          <h2 >CZFarm and CZUSD</h2>
           <br/>
 
           <StaticImage className="image" src="../images/czfarm.jpg" alt="czfarm" />
           <br/><br/>
           <p>
-            CZFarm is a CZodiac farming token which can be used for earning rewards from PCS LP with CZUsd. It will enable the community to capture wealth via BUSD deposits into the CZUsd contract &amp; allow the whole community to profit from the BUSD interest.
-            <br/><br/>CZUSD is an algorithmic stablecoin overcollateralized with CZF. By using economically neutral algorithmic alterations to the LP pool, CZUSD is able to offer much lower borrow collateralization ratios for the same level of volatility of underlying capital. Since the protocol's economic token CZF is the same as the collateral token, undercollateralized debt does not need to be liquidated as the underlying CZF is effectively burned when debt goes unpaid. The combination of algorithmic stabilization with high volatiltiy collateral reduces the complexity of the code base compared to other lending platforms. Reduced complexity means a smaller attack surface for hackers, a lower chance for bugs, and a greater possibility for the safe addition of new features.
+            CZF is the protocol token for CZodiac. It is earned as rewards in Stim Farms and Pack Vaults. It is staked as liquidity in farms and as an asset in pools earning various tokens. It is an inflationary token whose supply is set by a balance between minting and burning. The total supply of CZF is expected to never exceed 500b and will likely stay far below this number.
           </p>
+          <ul>
+            <li>CZF CA: <a href="https://bscscan.com/address/0x7c1608C004F20c3520f70b924E2BfeF092dA0043">0x7c1608C004F20c3520f70b924E2BfeF092dA0043</a> </li>
+            <li>CZF CMC: <a href="https://coinmarketcap.com/currencies/czfarm/">https://coinmarketcap.com/currencies/czfarm/</a></li>
+          </ul>
+          <br/><br/>
+          <p>
+            CZUSD is a USD stablecoin. The peg is maintained in the short term by the Scorch Peg which trades the token back to $1 and uses the profits to burn CZF. In the long term the peg is held by the Exempt Borrow feature which backs CZUSD with overcollateralized CZF debt.
+          </p>
+          <ul>
+            <li>CZUSD CA: <a href="https://bscscan.com/address/0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70">0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70</a> </li>
+       </ul>
         </div>
 
         <div className="our-team">
@@ -269,16 +286,9 @@ const IndexPage = () => {
           </div>
 
           <div className="team-member">
-            <StaticImage src="../images/admins/peter 500x500.png" alt="Peter" />
-            <h4>Peter Gaven</h4>
-            <p>Co COO &amp; Community Manager</p>
-            <StaticImage className="border" src="../images/border_gray.png" alt="Peter Gaven Portrait" />
-          </div>
-
-          <div className="team-member">
             <StaticImage src="../images/admins/rayoshi 500x500.png" alt="rayoshi" />
             <h4>Rayoshi</h4>
-            <p>Co COO &amp; Business Developer</p>
+            <p>COO &amp; Business Developer</p>
             <StaticImage className="border" src="../images/border_gray.png" alt="Rayoshi Portrait" />
           </div>
 
