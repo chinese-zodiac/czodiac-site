@@ -321,7 +321,7 @@ const IndexPage = () => {
               <div className="twitter"><a href="https://twitter.com/zodiacs_c"><StaticImage src="../images/twitter.png" alt="twitter" /></a></div>
             </li>
             <li className="list-item">
-              <div className="discord"><a href="https://discord.gg/FEpu3xF2Hb"><StaticImage src="../images/discord.png" alt="discord" /></a></div>
+              <div className="discord"><a href="https://discord.gg/nzHjq6Vewd"><StaticImage src="../images/discord.png" alt="discord" /></a></div>
             </li>
             <li className="list-item">
               <div className="medium"><a href="https://czodiacs.medium.com/"><StaticImage src="../images/medium.png" alt="medium" /></a></div>
