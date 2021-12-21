@@ -560,7 +560,7 @@ const IndexPage = () => {
 	          </div>
           	<div class="card-narrow">
 	   	        <div class="card-narrow-image">
-               <StaticImage src="../images/admins/sai 500x500.jpg" alt="xCrypto Portrait" />
+               <StaticImage src="../images/admins/xCrypto.jpg" alt="xCrypto Portrait" />
               </div>
               <div class="card-narrow-content">
                 <h3>xCrypto</h3>
