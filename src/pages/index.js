@@ -730,7 +730,7 @@ const IndexPage = () => {
               <div class="row row-cols-1 row-cols-xl-5">
               <div class="col"><a href="https://twitter.com/zodiacs_c"><StaticImage src="../images/twitter.png" alt="twitter" /></a></div>
               <div class="col"><a href="https://discord.gg/FEpu3xF2Hb"><StaticImage src="../images/discord.png" alt="discord" /></a></div>
-              <div class="col"><a href="https://czodiacs.medium.com/"><StaticImage src="../images/medium.png" alt="medium" /></a></div>
+              <div class="col"><a href="https://czodiac.medium.com/"><StaticImage src="../images/medium.png" alt="medium" /></a></div>
               <div class="col"><a href="https://github.com/chinese-zodiac/czodiac"><StaticImage src="../images/github.png" alt="github" /></a></div>
               <div class="col"><a href="https://t.me/CZodiacofficial"><StaticImage src="../images/telegram.png" alt="telegram" /></a></div>
             </div>
